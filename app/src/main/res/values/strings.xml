@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PandemicPass</string>
+    <string name="guestName">Guest Name</string>
+</resources>

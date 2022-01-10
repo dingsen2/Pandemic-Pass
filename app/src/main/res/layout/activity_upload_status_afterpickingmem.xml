@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MergeRootFrame" >
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/editimage"
+            >
+        </ImageView>
+        <TextView
+            android:id="@+id/name"
+            android:maxLines="1"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/approval_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Approval Status: "
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/approval_status_result"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/vaccinationRecordImage"
+            android:layout_width="200dp"
+            android:maxWidth="200dp"
+            android:layout_height="200dp"
+            android:maxHeight="200dp"
+            android:minHeight="200dp"
+            android:minWidth="200dp"
+            android:layout_marginRight="20dp"
+            android:src="@android:color/darker_gray"
+            ></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/uploadVaccinationRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPLOAD VACCINATION RECORD"
+                android:textColor="@color/white"
+                android:layout_gravity="center"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/testResultImage"
+            android:layout_marginRight="20dp"
+            android:layout_width="200dp"
+            android:maxWidth="200dp"
+            android:layout_height="200dp"
+            android:maxHeight="200dp"
+            android:minHeight="200dp"
+            android:minWidth="200dp"
+            android:src="@android:color/darker_gray"
+
+            ></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/uploadTestResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPLOAD TEST RESULT"
+                android:textColor="@color/white"
+                android:layout_gravity="center"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="center">
+    </ProgressBar>
+
+</LinearLayout>

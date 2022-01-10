@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginBottom="650dp"
+            android:text="Event Name"
+            android:textSize="25dp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-600dp"
+            android:text="Host:"
+            android:textSize="15dp"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Date:"
+            android:textSize="15dp"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Time:"
+            android:textSize="15dp"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Location:"
+            android:textSize="15dp"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Status Requirement:"
+            android:textSize="15dp"
+            ></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Description"></EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="_ of _guests approved"
+            android:textSize="15dp"
+            ></TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:text="Guest List"
+            android:textColor="@color/white"></Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Your Group Members"
+            android:textSize="15dp"></TextView>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="263dp"></ListView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Edit Party Members"
+            android:textColor="@color/white"></Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Add COVID Statuses"
+            android:textColor="@color/white"></Button>
+    </LinearLayout>
+</LinearLayout>

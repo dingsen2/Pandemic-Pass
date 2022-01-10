@@ -1,0 +1,148 @@
+<LinearLayout
+    android:id="@+id/relativeLayout1"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Uploads"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Allowed Verification Modes"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        />
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:src="@drawable/checkmark"-->
+<!--        >-->
+<!--    </ImageView>-->
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/accept_test_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept Test Result:"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:id="@+id/accept_test_result_res"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icons8_check_circle"/>
+
+        <!--        <TextView-->
+<!--            android:textColor="@color/purple_700"-->
+<!--            android:id="@+id/accept_test_result_res"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="left"-->
+<!--            android:textSize="18sp"/>-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/accept_vaccine_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept Vaccination Record:"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:id="@+id/accept_vaccine_record_res"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icons8_cancel"/>
+
+<!--        <TextView-->
+<!--            android:textColor="@color/purple_700"-->
+<!--            android:id="@+id/accept_vaccine_record_res"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="left"-->
+<!--            android:textSize="18sp"-->
+<!--            />-->
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click on a name to edit uploads"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Status"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nameStatusListView"/>
+</LinearLayout>

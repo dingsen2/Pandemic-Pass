@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/bigpincode"
+        >
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Event Code:"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/eventCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="EVENT CODE PLACEHOLDER"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp">
+
+        <Button
+            android:id="@+id/ShareCodeButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Share\nCode"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/share_button"
+            />
+
+        <Button
+            android:id="@+id/ViewEventButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="View\nEvent"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/green"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/hostEventHomeButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Return\nHome"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/orange"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

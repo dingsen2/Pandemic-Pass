@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/party"
+            >
+        </ImageView>
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Name"
+            android:textSize="30dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="0dp"
+                    android:layout_weight="14"
+                    android:layout_height="wrap_content"
+                    android:text="Host: "
+                    android:textSize="18sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/host"
+                    android:layout_width="0dp"
+                    android:layout_weight="86"
+                    android:layout_height="wrap_content"
+                    android:text="string"
+                    android:textSize="18sp"></TextView>
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="14"
+                android:layout_height="wrap_content"
+                android:text="Date: "
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_weight="86"
+                android:layout_height="wrap_content"
+                android:text="string"
+                android:textSize="18sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="14"
+                android:layout_height="wrap_content"
+                android:text="Time: "
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/time"
+                android:layout_width="0dp"
+                android:layout_weight="86"
+                android:layout_height="wrap_content"
+                android:text="string"
+                android:textSize="18sp"></TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="22"
+                android:layout_height="wrap_content"
+                android:text="Location: "
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/location"
+                android:layout_width="0dp"
+                android:layout_weight="78"
+                android:layout_height="wrap_content"
+                android:text="string"
+                android:textSize="18sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="37"
+                android:layout_height="wrap_content"
+                android:text="Requirement(s): "
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/requirements"
+                android:layout_width="0dp"
+                android:layout_weight="63"
+                android:layout_height="wrap_content"
+                android:text="string"
+                android:textSize="18sp"></TextView>
+        </LinearLayout>
+
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description: "
+                android:textSize="18sp"
+                android:background="@color/browser_actions_bg_grey"></TextView>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="string"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/browser_actions_bg_grey"></TextView>
+
+            <TextView
+                android:textColor="@color/black"
+
+                android:id="@+id/proportionOfGuestsApproved"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="_ of _ guests approved"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"></TextView>
+
+            <Button
+                android:id="@+id/guestList"
+                android:backgroundTint="@color/green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:text="GUEST LIST"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"></Button>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Group Members"
+                android:textSize="18sp"></TextView>
+
+            <ListView
+                android:id="@+id/attendingMemberList"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="100">
+
+                <Button
+                    android:id="@+id/editPartyMembers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Group"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="left"
+                    android:layout_weight="50"
+                    android:layout_marginRight="10dp">
+                </Button>
+
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/updateStatuses"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Edit Uploads"
+                    android:layout_gravity="right"
+                    android:textColor="@color/white">
+                </Button>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

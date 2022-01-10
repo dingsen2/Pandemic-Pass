@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="100dp">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:src="@drawable/calendar"
+            >
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What's the event date?"
+            android:textColor="@color/black"
+            android:textSize="24sp"/>
+
+        <Button
+            android:textSize="18sp"
+            android:id="@+id/eventDatePickerButton"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Jan 01 2020"
+            android:layout_marginTop="10dp"
+            style="?spinnerStyle"
+            android:onClick="openEventDatePicker"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+
+        android:src="@drawable/globe"
+        >
+    </ImageView>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What's the event location?"
+        android:textColor="@color/black"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/eventLocationEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Event Location"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What's the event time?"
+        android:textColor="@color/black"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/timeButton"
+        android:onClick="popTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Time"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/hostEventTwoNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+</LinearLayout>

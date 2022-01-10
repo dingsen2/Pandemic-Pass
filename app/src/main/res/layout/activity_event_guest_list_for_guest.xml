@@ -1,0 +1,77 @@
+<LinearLayout
+    android:id="@+id/relativeLayout1"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event Name"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:paddingTop="50dp"
+            android:textColor="@color/banner_color"
+            android:fontFamily="sans-serif-black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List of Guests:"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_marginTop="30dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_weight="1"
+                android:text="Name"
+                android:gravity="center"
+                android:textStyle="bold"/>
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Status"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:id="@+id/listViewHosting">
+
+    </ListView>
+</LinearLayout>
+

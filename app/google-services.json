@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "79846295112",
+    "project_id": "pandemicpass-dec4f",
+    "storage_bucket": "pandemicpass-dec4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79846295112:android:8bbb02c683088584883a7d",
+        "android_client_info": {
+          "package_name": "edu.illinois.cs465.pandemicpass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79846295112-634oc9kmj9dmcq5h6hku77ucugo303hp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC99XQbSZRft2RYixyGrBCgykl60W2Mimk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79846295112-634oc9kmj9dmcq5h6hku77ucugo303hp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

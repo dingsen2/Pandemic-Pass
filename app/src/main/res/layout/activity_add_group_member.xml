@@ -1,0 +1,56 @@
+<LinearLayout
+    android:id="@+id/relativeLayout1"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Group Member"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="70dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name:" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age:" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relation to main account owner:"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Add Member"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>

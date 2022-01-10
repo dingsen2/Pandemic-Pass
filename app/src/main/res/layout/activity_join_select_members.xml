@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/people"
+            >
+        </ImageView>
+        <TextView
+            android:id="@+id/eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_marginBottom="20dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Who's joining the event?"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:layout_marginBottom="10dp"
+            ></TextView>
+
+        <ListView
+            android:id="@+id/memberList"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginBottom="10dp"></ListView>
+
+        <Button
+            android:id="@+id/join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join"
+            android:textColor="@color/white">
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

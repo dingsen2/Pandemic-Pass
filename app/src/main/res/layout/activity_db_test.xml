@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top">
+
+
+
+        <Button
+            android:id="@+id/createEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="create event"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/uploadPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPLOAD IMAGE"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/memberName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="member name to add">
+        </EditText>
+
+        <Button
+            android:id="@+id/addMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD MEMBER"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/getMembers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GET MEMBERS"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Events"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/balloons"
+        >
+    </ImageView>
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/AttendingTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Attending"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:onClick="onClick"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/HostingTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Hosting"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:onClick="onClick"
+                android:clickable="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Event Name"
+                android:gravity="center"
+                android:layout_weight="50"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Date"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_weight="50"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewHosting">
+        </ListView>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewAttending">
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

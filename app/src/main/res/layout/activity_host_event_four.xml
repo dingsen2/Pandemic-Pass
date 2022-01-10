@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top|center">
+
+        <EditText
+            android:id="@+id/finalEventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="EVENT NAME PLACEHOLDER"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Date"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:textSize="18sp"
+                android:id="@+id/eventDatePickerButtonSummary"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Jan 01 2020"
+                style="?spinnerStyle"
+                android:onClick="openEventDatePicker"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What's the event time?"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/secondTimeButton"
+            android:onClick="secondPopTimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Time"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verification Modes"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allow vaccine record?"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"/>
+
+            <Switch
+                android:id="@+id/finalVaxSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allow test result?"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginRight="48dp"/>
+
+            <Switch
+                android:id="@+id/finalTestSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/finalEventLocationEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="EVENT LOCATION PLACEHOLDER"
+            android:textSize="18sp"
+            android:minWidth="200dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Description"
+            android:textSize="24sp"
+            android:minWidth="200dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/finalEventDescriptionEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:lines="8"
+            android:maxLines="10"
+            android:minLines="6"
+            android:scrollbars="vertical"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non dapibus enim, ac condimentum lacus. Suspendisse at dapibus elit. Donec dictum sapien non tortor scelerisque tincidunt. Morbi aliquet et lacus in ornare. Vivamus sollicitudin eget urna eget fringilla. Sed sollicitudin fringilla lobortis. Donec nec nisl vel odio euismod ullamcorper. Etiam ornare purus ac quam auctor, in luctus velit feugiat. In vulputate dolor eget augue convallis consequat. Donec sed arcu neque."/>
+
+        <Button
+            android:id="@+id/genEventCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate\nEvent Code"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            />
+    </LinearLayout>
+</ScrollView>

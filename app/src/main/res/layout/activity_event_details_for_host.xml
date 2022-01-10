@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top|center">
+
+        <TextView
+            android:id="@+id/HostViewEventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:text="EVENT NAME PLACEHOLDER"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/firstLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:text="Event Date:"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/HostViewEventDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PLACEHOLDER"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/firstLinearLayout"
+                android:layout_alignLeft="@id/firstLinearLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Event Code:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:layout_marginRight="8dp"/>
+
+                <TextView
+                    android:id="@+id/HostViewEventCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PLACEHOLDER"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verification Modes:"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/HostViewEventVax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vaccine Card Is Allowed"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/HostViewEventTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COVID Test Is Not Allowed"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Event Location:"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/HostViewEventLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EVENT LOCATION PLACEHOLDER"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Event Time:"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/HostViewEventTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EVENT Time PLACEHOLDER"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Description:"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/HostViewEventDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:layout_marginTop="20dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non dapibus enim, ac condimentum lacus. Suspendisse at dapibus elit. Donec dictum sapien non tortor scelerisque tincidunt. Morbi aliquet et lacus in ornare. Vivamus sollicitudin eget urna eget fringilla. Sed sollicitudin fringilla lobortis. Donec nec nisl vel odio euismod ullamcorper. Etiam ornare purus ac quam auctor, in luctus velit feugiat. In vulputate dolor eget augue convallis consequat. Donec sed arcu neque."
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:id="@+id/HostViewEditEventButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit\nDetails"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginRight="50dp"
+                />
+
+            <Button
+                android:id="@+id/HostViewShareCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share\nCode"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/HostViewHomeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:text="Return\nHome"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/HostViewGuestsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View\nGuests"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,158 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MergeRootFrame" >
+
+        <TextView
+            android:id="@+id/hostViewGuestName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guestName"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/passfail"
+            >
+        </ImageView>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Approval Status: "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/hostViewGuestapproval_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="@color/black"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/HostViewVaccineStatusText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Vaccine Status: "
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/hostViewGuestvaccine_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="@color/black"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/hostViewTestingStatusText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Testing Status: "
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/hostViewGuesttesting_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textColor="@color/black"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="100dp">
+
+            <Button
+                android:id="@+id/hostViewGuestVaccine"
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:text="View Vaccine"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginRight="40dp"/>
+
+            <Button
+                android:id="@+id/hostViewGuestTest"
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:text="View Test"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/acceptButton"
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:text="Accept"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginRight="40dp"/>
+
+            <Button
+                android:id="@+id/denyButton"
+                android:layout_width="110dp"
+                android:layout_height="70dp"
+                android:text="Deny"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

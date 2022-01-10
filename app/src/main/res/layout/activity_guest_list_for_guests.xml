@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/list"
+            >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/guestListText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guest List"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop = "90dp"></TextView>
+
+        <TextView
+            android:id="@+id/eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Name"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/eventDate"
+                android:layout_width="0dp"
+                android:layout_weight="60"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"></TextView>
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/eventTime"
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:layout_height="wrap_content"
+                android:text="time"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"></TextView>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/guestList"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginBottom="10dp"></ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

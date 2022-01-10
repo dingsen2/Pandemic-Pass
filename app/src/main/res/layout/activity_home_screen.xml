@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <ImageButton
+            android:id="@+id/userProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/user_profile"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="200dp">
+
+
+
+        <Button
+            android:id="@+id/joinEvent"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:text="Join Event"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginRight="40dp"
+            />
+
+        <Button
+            android:id="@+id/hostEvent"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:text="Host Event"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:backgroundTint="@color/purple"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/viewEvents"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:text="View Events"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:backgroundTint="@color/green"/>
+    </LinearLayout>
+</LinearLayout>

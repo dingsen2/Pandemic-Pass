@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top">
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <EditText
+            android:id="@+id/name"
+            android:maxLines="1"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="Username"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/saveName"
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Save"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/vaccinationRecordImage"
+            android:layout_width="200dp"
+            android:maxWidth="200dp"
+            android:layout_height="200dp"
+            android:maxHeight="200dp"
+            android:minHeight="200dp"
+            android:minWidth="200dp"
+            android:layout_marginRight="20dp"
+            android:src="@android:color/darker_gray"
+            ></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/uploadVaccinationRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPLOAD VACCINATION RECORD"
+                android:textColor="@color/white"
+                android:layout_gravity="center"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/testResultImage"
+            android:layout_marginRight="20dp"
+            android:layout_width="200dp"
+            android:maxWidth="200dp"
+            android:layout_height="200dp"
+            android:maxHeight="200dp"
+            android:minHeight="200dp"
+            android:minWidth="200dp"
+            android:src="@android:color/darker_gray"
+
+            ></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/uploadTestResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPLOAD TEST RESULT"
+                android:textColor="@color/white"
+                android:layout_gravity="center"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="center">
+    </ProgressBar>
+
+</LinearLayout>
