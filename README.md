@@ -1,1 +1,1 @@
-# Pandemic-Pass
+# Pandemic Pass
